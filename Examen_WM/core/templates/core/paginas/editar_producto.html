@@ -1,0 +1,36 @@
+{% extends 'core/base.html' %}
+{% load static %}
+{% block titulo%}Editar Producto{% endblock%}
+
+   {% block contenido %}
+   {% load crispy_forms_tags %}
+   <div class="container">
+       <div class="row mt-4">
+           
+           <div class="col-12 col-md-6 offset-md-3">
+
+                <div class="card" style="background-color:#d7dcdc;">
+                    <div class="card-body">
+                        <h1>Editar Productos</h1>
+                        <form action="" class="" method="post" enctype="multipart/form-data">
+                            {% csrf_token %}   
+                            {{ form | crispy}}
+                            <br>
+                            <hr>
+                            <div class="d-flex justify-content-end">
+                                <button type="reset" value="Cancelar" class="btn btn-secondary">Cancelar</button>
+                                &nbsp;
+                                <button type="submit" id="btnEnviar" class="btn btn-primary">Modificar</button>        
+                            </div>        
+                        </form>
+                        {{mensaje}}
+                    </div>
+                </div>
+               
+
+           </div>
+            
+       </div>
+   </div>
+   
+    {% endblock%}  

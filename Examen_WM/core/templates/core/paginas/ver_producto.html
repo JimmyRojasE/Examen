@@ -1,0 +1,31 @@
+{% extends 'core/base.html' %}
+
+{% block contenido %}
+ 
+<div class="container">
+    <div class="row mt-3">
+        <div class="col-md-5 ">
+            <div class="card">
+                <a href="#"><img src="{{producto.imagen}}" class="card-img-top w-100" width="400" height="500"
+                        alt="..."></a>
+            </div>
+        </div>
+        <div class="col-md-7">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title"> {{producto.descripcion}}</h5>
+                        <p class="card-text">precio: {{producto.precio}} </p>
+                        <p class="card-text">precio promocion: {{producto.precio_promocion}} </p>
+                        <p class="card-text">stock: {{producto.stock}}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row mt-3">
+        <div class="col-12 col-md-6 offset-md-3">
+            <a href="#" class="btn btn-warning w-100 letraform">Agregar al Carro</a>
+        </div>
+    </div>
+    
+</div>
+{% endblock %}

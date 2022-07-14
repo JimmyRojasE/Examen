@@ -1,0 +1,42 @@
+{% extends 'core/base.html' %}
+
+{% block contenido %}
+<div class="container-md mt-4">
+    <div class="row">
+
+        {% for producto in listarproducto %}
+        <div class="col-md-4 mt-4">
+            <div class="card h-100 ">
+                <div class="card h-100">
+                    <div class="card-header ">
+                        <img src="{{producto.imagen}}"  class="card-img-top d-block w-100"   width="100" height="300" alt="">
+                    </div>
+
+                    <div class="card-body">
+                        <h5 class="card-title">{{producto.descripcion}}</h5>
+                        <p class="card-text">precio: {{producto.precio}} </p>
+                        <p class="card-text">precio promocion: {{producto.precio_promocion}} </p>
+                        <p class="card-text">stock: {{producto.stock}}</p>
+
+                    </div>
+                    <div class="card-footer text-center">
+                        <div class="col">
+                            <a href="#" class="btn btn-warning w-100 letraform">Agregar al Carro</a>
+                        </div>
+                        <br>
+                        <div class="col">
+                            <a href="{% url 'ver_producto' producto.id %}" class="btn btn-danger w-100 letraform">Ver Producto</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        {% endfor %}
+    </div>
+
+
+
+</div>
+
+{% endblock %}

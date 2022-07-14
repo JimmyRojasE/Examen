@@ -1,0 +1,90 @@
+{% extends 'core/base.html' %}
+{% load static %}
+
+{% block titulo%}Home{% endblock%}
+
+   {% block contenido %}
+   <div class="container-fluid mt-3">
+    <div class="row">
+        <div class="col-md-12">
+            <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+                    <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="{%static 'core/img/mascotas.png'%}" class="d-block w-100" width="500" height="500" alt="...">
+                    </div>
+                    
+                    <div class="carousel-item">
+                        <img src="{%static 'core/img/perros.jpeg'%}" class="d-block w-100" width="500" height="500" alt="...">
+                    </div>
+
+                    <div class="carousel-item">
+                        <img src="{%static 'core/img/gatos.png'%}" class="d-block w-100" width="500" height="500" alt="...">
+                    </div>
+                </div>
+
+                <button class="carousel-control-prev" type="button" data-target="#carouselExampleCaptions" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">anterior</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-target="#carouselExampleCaptions" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">siguiente</span>
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+  
+   <div class="container">
+        <div class="row">
+            <div class="col-md-12 text-center">
+
+            
+            <h1>Categorias :</h1>
+        </div>
+        </div>
+       <div class="row">
+            
+        <div class="card-deck">
+            <div class="card">
+              <img src="{%static 'core/img/Bandanas.jpeg'%}" class="card-img-top" class="d-block w-100 "  width="100" height="300"alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Bandanas</h5>
+                <p class="card-text">En nuestra tienda en linea encontraras las mejores bandanas para tu mascota</p>
+              </div>
+              <div class="card-footer">
+                <a href="{% url 'ver_categoria' 1 %}" class="btn btn-warning w-100 ">Ver Categoria</a>
+              </div>
+            </div>
+            <div class="card">
+              <img src="{%static 'core/img/collares.jpeg'%}" class="card-img-top" class="d-block w-100 "  width="100" height="300"alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Correas y Collares</h5>
+                <p class="card-text">En nuestra tienda encontraras las mejores Correas y Collares para tu mascota</p>
+              </div>
+              <div class="card-footer">
+                <a href="{% url 'ver_categoria' 2 %}" class="btn btn-warning w-100 ">Ver Categoria</a>
+              </div>
+            </div>
+            <div class="card">
+              <img src="{%static 'core/img/Identificadores.jpg'%}" class="card-img-top" class="d-block w-100 "  width="100" height="300" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Identificadores</h5>
+                <p class="card-text">En nuestra tienda en linea encontraras los mejores Identificadores para tu mascota</p>
+              </div>
+              <div class="card-footer">
+                <a href="{% url 'ver_categoria' 3 %}" class="btn btn-warning w-100 ">Ver Categoria</a>
+              </div>
+            </div>
+          </div>       
+            
+            
+        </div>
+   </div> 
+    
+   {% endblock %}

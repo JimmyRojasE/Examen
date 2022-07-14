@@ -1,0 +1,146 @@
+.table {
+    border: 2px black solid;
+    color: white;
+    background-color: grey;
+}
+
+.IMG_ACT {
+    margin: 1px;
+    padding: 1px;
+    border: 2px black solid;
+    width: 200px;
+    height: 200px;
+}
+
+.imgniño {
+
+    height: 600px;
+}
+
+.carruselimagen {
+
+    width: 800px;
+    height: 800px;
+}
+
+.fondonegro {
+    background-color: black;
+}
+
+
+body {
+       margin: 0;
+    display: grid;
+    min-height: 100vh;
+    grid-template-rows: auto 1fr auto;
+    }
+
+
+
+
+#galeria img {
+    width: 100%;
+    height: 250;
+
+}
+
+#galeria .col-lg-4 {
+    padding: 25px;
+
+    margin: 0 !important;
+}
+
+.margentop {
+
+    margin-top: 5%;
+}
+
+.colorcard {
+    color: darkslategray;
+}
+
+tamañobox {
+
+    box-sizing: border-box;
+}
+
+.altoimgangel {
+    width: 790px;
+}
+
+.colorangel {
+    background-color: black;
+}
+
+.obrasp {
+    color: white;
+}
+
+.diseñoobra {
+    width: 400px;
+}
+
+.tituloindex{
+    text-align: center;
+
+}
+
+.diseñotitulo{
+    width: 700px;
+}
+
+.diseñocard{
+    background-color: rgb(77, 77, 79);
+
+}
+
+.colorletratit{ 
+    font-style: italic;
+    
+
+    color: rgb(247, 247, 247);
+}
+.card_body_index{
+    border: 0px;
+    
+}
+
+
+.forma-login{width:1000px;}
+.titulo-login{font-family: 'Exo', sans-serif;text-align:center;color: rgb(255, 255, 255);}
+.login-userinput{margin-bottom: 10px;}
+.boton-registro{margin-top:10px;}
+.login-options{margin-bottom:0px;}
+.login-forgot{float: right;} 
+
+
+
+.card-body1{
+    background: rgba(0, 0, 0, 0.4);
+}
+
+.letraform{
+    color: white;
+}
+
+
+#boton{
+    background: #31384a;
+    color: #fff;
+    padding: 10px;
+}
+
+#boton:hover{
+    cursor: pointer;
+}
+.categoria{
+    height: 50px;
+}
+html {
+    min-height: 100%;
+    position: relative;
+}
+.page-footer{
+    padding: 1em 0;
+    margin-top: auto;
+}
